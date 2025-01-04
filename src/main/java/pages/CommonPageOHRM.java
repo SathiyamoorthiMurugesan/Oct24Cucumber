@@ -29,18 +29,18 @@ public class CommonPageOHRM {
 	List<WebElement> link_Page;
 	
 	public void validateThePageHeader(String pageHeader) throws Exception {
-		try {
+//		try {
 //		Assert.assertEquals(text_DashboardPageHeader.getText(), pageHeader);
 		Assert.assertEquals(text_PageHeader.getText(), pageHeader);
-		Generic.extentLogger.pass("Page header validation is successfull",
-				MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
+//		Generic.extentLogger.pass("Page header validation is successfull",
+//				MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
 
-	} catch (Exception e) {
-		Generic.extentLogger.fail("Failed tot validate the page header",
-				MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
-
-		Assert.fail("Failed tot validate the page header "+ e.getMessage());
-	}
+//	} catch (Exception e) {
+//		Generic.extentLogger.fail("Failed tot validate the page header",
+//				MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
+//
+//		Assert.fail("Failed tot validate the page header "+ e.getMessage());
+//	}
 	}
 	
 	public void goToAPage(String pageName) throws Exception {

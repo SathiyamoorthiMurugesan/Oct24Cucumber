@@ -56,7 +56,7 @@ public class LoginPageOHRM {
 	}
 
 	public void loginOrangeHrmApplication1(String userName, String password) throws Exception {
-		try {
+//		try {
 			generic.sendTextToAnElement(textBox_UserName, userName);
 			generic.sendTextToAnElement(textBox_Password, password);
 			generic.clickAnElement(button_Login);
@@ -65,17 +65,17 @@ public class LoginPageOHRM {
 //			CommonPageOHRM commonPage = new CommonPageOHRM(driver);
 //			commonPage.validateThePageHeader("Dashboard");
 			
-			Generic.captureScreenshot();
-
-			Generic.extentLogger.pass("Logged in OrangeHRM application",
-					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
-
-		} catch (Exception e) {
-			Generic.extentLogger.fail("Failed to login OrangeHRM application",
-					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
-
-			Assert.fail("Failed to login Orange HRM page" + e.getMessage());
-		}
+//			Generic.captureScreenshot();
+//
+//			Generic.extentLogger.pass("Logged in OrangeHRM application",
+//					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
+//
+//		} catch (Exception e) {
+//			Generic.extentLogger.fail("Failed to login OrangeHRM application",
+//					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
+//
+//			Assert.fail("Failed to login Orange HRM page" + e.getMessage());
+//		}
 	}
 
 	public void openGivenSocialMediaPageOfOrangeHRM(String socialMediaName) {
